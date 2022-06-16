@@ -40,6 +40,7 @@ var urlInputElemento = document.querySelector('#url')
 var tituloInputElemento = document.querySelector('#titulo')
 var descricaoInputElemento = document.querySelector('#descricao')
 var autorInputElemento = document.querySelector('#autor')
+
 newpostElemento . addEventListener('click' ,(event) =>  {
 
 event.preventDefault()
@@ -60,6 +61,13 @@ event.preventDefault()
            <h3> ${ newpost . autor } </h3>
         </div>
     `
-    console.log(newpost)
+    urlInputElemento.value = " "
+    tituloInputElemento.value = " "
+    descricaoInputElemento.value = " " 
+    autorInputElemento.value = " "
+
+
+
+    
 
 } )
